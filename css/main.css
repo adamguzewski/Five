@@ -1,0 +1,622 @@
+/* IMPORT CZCIONEK */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lora|Nunito|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lora|Nunito|Roboto+Condensed');
+
+/*Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+body {
+    line-height:1;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content:none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0 0 0 0;
+}
+
+/* Koniec Reset CSS */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora', serif;
+}
+
+header{
+    background-image: url("../img/header-bg.jpg");
+    height: auto;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0;
+}
+.container-menu{
+    max-width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 5%;
+}
+
+.logo{
+    color: #fed135;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 3em;
+    font-family: 'Indie Flower', cursive;
+}
+nav{
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+nav > ul{
+    float: right;
+}
+
+nav > ul > li{
+    text-allign: center;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li:hover > a {
+    color: #fed135;
+}
+
+nav > ul > li > a{
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav > ul > li{
+    float: left;
+}
+
+nav a{
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1px;
+}
+
+[type="checkbox"], label{
+    display: none;
+}
+
+.welcome{
+    margin-top: 190px;
+    text-align: center;
+}
+
+.welcome2{
+    margin-top: 25px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.down-button{
+    margin-top: 15px;
+    padding-bottom: 190px;
+    text-align: center;
+}
+.down-button > a{
+    font-weight: 500;
+    border: 2px solid #fed135;
+    padding: 15px 26px 15px 26px;
+    color: white;
+    background-color: #fed135;
+    font-size: 3em;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 2.5em;
+    color: white;
+    font-style: italic;
+
+}
+h1{
+    font-weight: bold;
+    font-size: 5.3em;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 4px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h6{
+    font-weight: bold;
+    font-size: 0.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.services-def{
+    padding-top: 3%;
+}
+
+.about-list{
+    list-style: disc;
+    font-size: 0.8em;
+}
+.no-style{
+    list-style: none;
+}
+.icon{
+    color: #fed135;
+    background-color: white;
+    padding: 6% 9%;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    font-size: 3em;
+}
+
+.column{
+    float: left;
+}
+
+.contact{
+    text-align: left;
+    width: 50%;
+}
+
+.service{
+    text-align: center;
+    width: 25%;
+    padding: 0 2% 0 0;
+}
+
+.service:first-child{
+    paddig: 0;
+}
+
+.service-img{
+    padding-bottom: 5%;
+}
+
+.color-orange{
+    background-color: #fed135;
+
+}
+.color-grey{
+    background-color: #F7F7F7;
+}
+
+.main{
+    text-align: center;
+
+    clear: both;
+    display: table;
+}
+
+.services-section{
+    padding: 5% 10% 12% 10%;
+    width: 100%;
+}
+
+.about-section{
+    padding: 2% 10% 7% 10%;
+    width: 100%;
+}
+
+.row{
+    clear: both;
+}
+
+.section-title{
+    padding-top: 10%;
+    position: relative;
+}
+
+.no-padding{
+    padding: 0 0 0 0 !important;
+}
+
+.portfolio-item{
+    float: left;
+    width: 31%;
+    margin: 1%;
+}
+.main-portfolio{
+    clear: both;
+    display: table;
+    padding: 1% 10% 9% 10%;
+    width: 100%;
+}
+
+.caption-portfolio{
+    text-align: center;
+    padding: 5% 1%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.portfolio-item-background{
+    background-color: white;
+}
+
+.portfolio-image{
+    width: 100%;
+}
+.about-image{
+    max-width: 100%;
+    padding: 0 3% 0 0 ;
+    text-align: left;
+    margin-top: 1%;
+}
+
+.portfolio-text{
+    font-size: 0.8em;
+    color: #777777;
+    font-style: italic;
+}
+
+.caption-about{
+    text-align: left;
+}
+.about-item{
+    width: 33%;
+    text-align: left;
+    padding: 0 0 0 3%;
+    float: left;
+}
+.about-item:first-child{
+    width: 33%;
+    text-align: left;
+    padding: 0;
+    float: left;
+}
+
+.about-heading{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+.team-member-image{
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+
+}
+
+.team-icons{
+    text-decoration: none;
+    color: #fed135;
+    font-size: 0.8em;
+    text-indent: 10px;
+}
+
+.team-section{
+    padding: 5% 10% 5% 10%;
+    width: 100%;
+
+}
+.team-section-def{
+    padding: 0 22% 5% 22%;
+}
+
+.member{
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+
+.team-img{
+    height: 230px;
+    width: 230px;
+    margin: 0 auto 10% auto;
+}
+
+ul.team-icon-buttons li{
+    display: inline;
+}
+
+.about-text-grey{
+    color: #777777;
+    font-size: 0.8em;
+}
+
+.services-def-color{
+    color: #777777;
+    font-size: 0.8em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    nav ul {
+        display: none;
+    }
+
+    label {
+        display: block;
+        background: #fed135;
+        width: 31px;
+        height: 28px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        border-radius: 6px;
+        border: 2px solid #fed135;
+        margin: 2px;
+    }
+
+
+    label:after{
+        content:'';
+        display: block;
+        width: 15px;
+        height: 1px;
+        background: whitesmoke;
+        margin: 7px 6px;
+        box-shadow: 0px 5px 0px #FFFFFF, 0px 10px 0px #FFFFFF;
+        border-radius: 2px;
+    }
+
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 1000;
+        position: absolute;
+        margin: 0 0 0 0;
+        left: 0%;
+        width: 100%;
+    }
+
+    nav a {
+        color: #777;
+
+    }
+
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #222;
+        text-indent: 20px;
+    }
+
+    nav > ul > li {
+        margin-left: 0px;
+    }
+
+
+    div.welcome2{
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding-bottom: 150px;
+
+    }
+    /*
+    div.down-button{
+        display:none;
+    }*/
+    header > div.container-menu{
+        background-color: #222222;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    header{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .service{
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+        height: auto;
+    }
+
+    .portfolio-item{
+        text-align: center;
+        float: none;
+        margin: 0;
+        margin-top: 3%;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+
+    }
+    .main-portfolio {
+        padding-bottom: 13%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .about-item{
+        width: 100%;
+        padding-left: 4%;
+    }
+
+    .about-list{
+        padding-left: 4%;
+    }
+
+    .member{
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .main.team-section{
+
+        margin: 0 auto;
+    }
+
+    .team-img{
+        margin: 5% auto;
+    }
+
+    .team-section-def {
+        padding: 2% 5% 8% 5%;
+    }
+
+    .services-section{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 768px){
+
+
+    div.welcome{
+        margin-top: 50px;
+    }
+    div.welcome2{
+        margin-top: 10px;
+
+        padding-bottom: 140px;
+    }
+
+    header > div.container-menu{
+        background-color: transparent;
+        width: 100%;
+        padding-top: 2%;
+    }
+    header{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .service{
+        float: none;
+        width: 100%;
+        padding-top: 3%;
+    }
+
+    .portfolio-item{
+        float: left;
+        margin-top: 3%;
+        width: 48%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .main-portfolio{
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-item{
+        width: 100%;
+        padding-left: 4%;
+    }
+
+    .about-list{
+        padding-left: 4%;
+    }
+    .member{
+        text-align: center;
+        width: 50%;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .main.team-section{
+        margin: 0 auto;
+    }
+
+    .team-img{
+        margin: 5% auto;
+    }
+
+    .team-section-def {
+        padding: 2% 8% 5% 8%;
+    }
+
+    .services-section{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .icon{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+}
+
+
+
