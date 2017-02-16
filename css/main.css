@@ -44,8 +44,9 @@ body{
     font-family: sans-serif;
     margin: 0 0 0 0;
 }
-
 /* Koniec Reset CSS */
+
+
 
 *{
     box-sizing: border-box;
@@ -54,6 +55,8 @@ body{
 body{
     font-family: 'Lora', serif;
 }
+
+/* HEADER */
 
 header{
     background-image: url("../img/header-bg.jpg");
@@ -65,10 +68,11 @@ header{
     background-size: cover;
 }
 
-.container{
+.containe r{
     margin: 0 auto;
     padding: 0;
 }
+
 .container-menu{
     max-width: 100%;
     padding: 0px 20px;
@@ -85,6 +89,7 @@ header{
     font-size: 3em;
     font-family: 'Indie Flower', cursive;
 }
+
 nav{
     padding-right: 3%;
     padding-top: 1%;
@@ -117,6 +122,7 @@ nav > ul > li > a{
     text-decoration: none;
     font-weight: bold;
 }
+
 nav > ul > li{
     float: left;
 }
@@ -142,11 +148,13 @@ nav a{
     margin-bottom: 45px;
     text-align: center;
 }
+
 .down-button{
     margin-top: 15px;
     padding-bottom: 190px;
     text-align: center;
 }
+
 .down-button > a{
     font-weight: 500;
     border: 2px solid #fed135;
@@ -157,18 +165,20 @@ nav a{
     border-radius: 5px;
 }
 
-h2{
-    font-size: 2.5em;
-    color: white;
-    font-style: italic;
+/* KONIEC HEADER */
+/* NAGŁÓWKI */
 
-}
 h1{
     font-weight: bold;
     font-size: 5.3em;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 4px;
+}
+h2{
+    font-size: 2.5em;
+    color: white;
+    font-style: italic;
 }
 h3{
     text-align: center;
@@ -177,14 +187,12 @@ h3{
     color: black;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
 h4{
     font-weight: bold;
     font-size: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
-
 h5{
     font-weight: bold;
     font-size: 1.1em;
@@ -195,15 +203,18 @@ h6{
     font-size: 0.8em;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.contact-header-color{
+    color: white;
+}
 
 .services-def{
     padding-top: 3%;
 }
 
-.about-list{
-    list-style: disc;
-    font-size: 0.8em;
+.text-center{
+    text-align: center;
 }
+
 .no-style{
     list-style: none;
 }
@@ -220,9 +231,83 @@ h6{
     float: left;
 }
 
-.contact{
-    text-align: left;
+.color-orange{
+    background-color: #fed135;
+
+}
+.color-grey{
+    background-color: #F7F7F7;
+}
+
+.main{
+    display: table;
+}
+
+.form-section{
+    width: 100%;
+    display: table;
+}
+
+.form-half{
     width: 50%;
+    float: left;
+    padding: 2%;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.form-field{
+    margin-bottom: 20px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    height: 37px;
+}
+
+.area{
+    height: 150px;
+}
+
+.no-padding-left{
+    padding-left: 0;
+}
+
+.button-submit{
+    padding: 10px 15px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 0px;
+    font-family: 'Nunito', sans-serif;
+    color: #212020;
+    font-weight: bold;
+}
+
+.row{
+    clear: both;
+}
+
+.section-title{
+    padding-top: 10%;
+}
+
+.no-padding{
+    padding: 0 0 0 0 !important;
+}
+
+/* SERVICES SECTION */
+
+.services-section{
+    padding: 5% 10% 12% 10%;
+    width: 100%;
+}
+
+.services-def-color{
+    color: #777777;
+    font-size: 0.8em;
 }
 
 .service{
@@ -238,44 +323,7 @@ h6{
 .service-img{
     padding-bottom: 5%;
 }
-
-.color-orange{
-    background-color: #fed135;
-
-}
-.color-grey{
-    background-color: #F7F7F7;
-}
-
-.main{
-    text-align: center;
-
-    clear: both;
-    display: table;
-}
-
-.services-section{
-    padding: 5% 10% 12% 10%;
-    width: 100%;
-}
-
-.about-section{
-    padding: 2% 10% 7% 10%;
-    width: 100%;
-}
-
-.row{
-    clear: both;
-}
-
-.section-title{
-    padding-top: 10%;
-    position: relative;
-}
-
-.no-padding{
-    padding: 0 0 0 0 !important;
-}
+/* PORTFOLIO */
 
 .portfolio-item{
     float: left;
@@ -303,12 +351,6 @@ h6{
 .portfolio-image{
     width: 100%;
 }
-.about-image{
-    max-width: 100%;
-    padding: 0 3% 0 0 ;
-    text-align: left;
-    margin-top: 1%;
-}
 
 .portfolio-text{
     font-size: 0.8em;
@@ -316,15 +358,29 @@ h6{
     font-style: italic;
 }
 
+/* ABOUT SECTION */
+
+.about-section{
+    padding: 2% 10% 7% 10%;
+    width: 100%;
+}
+
 .caption-about{
     text-align: left;
 }
+
+.about-list{
+    list-style: disc;
+    font-size: 0.8em;
+}
+
 .about-item{
     width: 33%;
     text-align: left;
     padding: 0 0 0 3%;
     float: left;
 }
+
 .about-item:first-child{
     width: 33%;
     text-align: left;
@@ -337,6 +393,19 @@ h6{
     margin-bottom: 3%;
 }
 
+.about-text-grey{
+    color: #777777;
+    font-size: 0.8em;
+}
+
+.about-image{
+    max-width: 100%;
+    padding: 0 3% 0 0 ;
+    text-align: left;
+    margin-top: 1%;
+}
+
+/* TEAM SECTION */
 
 .team-member-image{
     border-radius: 50%;
@@ -344,7 +413,6 @@ h6{
     width: 100%;
     background-color: white;
     height: 100%;
-
 }
 
 .team-icons{
@@ -357,7 +425,6 @@ h6{
 .team-section{
     padding: 5% 10% 5% 10%;
     width: 100%;
-
 }
 .team-section-def{
     padding: 0 22% 5% 22%;
@@ -379,20 +446,28 @@ ul.team-icon-buttons li{
     display: inline;
 }
 
-.about-text-grey{
-    color: #777777;
-    font-size: 0.8em;
+/* CONTACT SECTION */
+
+.contact{
+    text-align: left;
+    width: 50%;
 }
 
-.services-def-color{
-    color: #777777;
-    font-size: 0.8em;
+.contact-section{
+    padding: 1% 10% 1% 10%;
 }
 
-.text-center{
-    text-align: center;
+.contact-data{
+    font-size: 0.7em;
 }
 
+.contact-heading{
+    padding-bottom: 10px;
+}
+
+.contact-section-def{
+    padding: 1% 22% 1% 22%;
+}
 
 @media (max-width: 768px){
     nav ul {
@@ -436,7 +511,6 @@ ul.team-icon-buttons li{
 
     nav a {
         color: #777;
-
     }
 
     nav ul li {
@@ -451,18 +525,19 @@ ul.team-icon-buttons li{
     nav > ul > li {
         margin-left: 0px;
     }
-
-
     div.welcome2{
         margin-top: 10px;
         margin-bottom: 0;
-        padding-bottom: 150px;
-
+        padding-bottom: 60px;
     }
-    /*
-    div.down-button{
-        display:none;
-    }*/
+    h1{
+        font-size: 4.5em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
     header > div.container-menu{
         background-color: #222222;
         width: 100%;
@@ -477,9 +552,7 @@ ul.team-icon-buttons li{
         text-align: center;
         float: none;
         width: 100%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 5%;
+        padding: 0% 5% 5% 5%;
         height: auto;
     }
 
@@ -503,7 +576,7 @@ ul.team-icon-buttons li{
 
     .about-item{
         width: 100%;
-        padding-left: 4%;
+        padding-left: 0;
     }
 
     .about-list{
@@ -518,7 +591,6 @@ ul.team-icon-buttons li{
     }
 
     .main.team-section{
-
         margin: 0 auto;
     }
 
@@ -529,24 +601,42 @@ ul.team-icon-buttons li{
     .team-section-def {
         padding: 2% 5% 8% 5%;
     }
-
     .services-section{
-        padding-right: 2%;
-        padding-left: 2%;
+        padding: 0;
+    }
+    .form-half{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        height: 175px;
     }
 
+    .contact-section-def {
+        padding: 1% 5% 1% 5%;
+    }
+
+    .about-item:first-child{
+        width: 100%;
+    }
+    .contact-section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 768px){
-
-
     div.welcome{
         margin-top: 50px;
     }
     div.welcome2{
         margin-top: 10px;
-
-        padding-bottom: 140px;
+        padding-bottom: 70px;
     }
 
     header > div.container-menu{
@@ -579,14 +669,16 @@ ul.team-icon-buttons li{
         margin: 0 auto;
         text-align: center;
     }
+
     .about-item{
         width: 100%;
+        padding-left: 0;
+    }
+
+    .about -list{
         padding-left: 4%;
     }
 
-    .about-list{
-        padding-left: 4%;
-    }
     .member{
         text-align: center;
         width: 50%;
@@ -603,7 +695,7 @@ ul.team-icon-buttons li{
     }
 
     .team-section-def {
-        padding: 2% 8% 5% 8%;
+        padding: 2% 10% 5% 10%;
     }
 
     .services-section{
@@ -616,7 +708,7 @@ ul.team-icon-buttons li{
         padding-right: 7%;
     }
 
+    .about-item:first-child{
+        width: 100%;
+    }
 }
-
-
-
